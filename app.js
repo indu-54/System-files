@@ -38,7 +38,7 @@ app.use(function (req, res, next) {
 
 //MongoDB Atlas connection using native driver
 // const MongoClient = require('mongodb').MongoClient;
-const uri = 'mongodb+srv://indusunkari7:HGFrKUuL7iSfuRu9@cluster0.jbspbuv.mongodb.net/mongodbconnection?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://indusunkari7:yYbhXqWkTYLK6Dr6@cluster0.jbspbuv.mongodb.net/mongodbconnection?retryWrites=true&w=majority';
 const client = new MongoClient(uri, {});
 
 //Connect to MongoDB Atlas
@@ -111,10 +111,6 @@ app.use(cors());
 
 app.use(bodyParser.json());
 app.use(fileUpload({ createParentPath: true }));
- 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
 
  
 // Handle JSON payload
