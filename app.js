@@ -38,7 +38,7 @@ app.use(function (req, res, next) {
 
 //MongoDB Atlas connection using native driver
 // const MongoClient = require('mongodb').MongoClient;
-const uri = 'const uri = 'mongodb+srv://indusunkari7:FR5ajziZ3Qu4vAa6@cluster0.pszusn4.mongodb.net/?retryWrites=true&w=majority';
+const uri ='mongodb+srv://indusunkari7:FR5ajziZ3Qu4vAa6@cluster0.pszusn4.mongodb.net/?retryWrites=true&w=majority';
 
 const client = new MongoClient(uri, {});
 
