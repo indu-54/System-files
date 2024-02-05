@@ -12,7 +12,6 @@ payment_route.set('views',path.join(__dirname, '../views'));
 
 const Paymentcontroller = require('../middleware/Paymentcontroller');
 
-payment_route.get('/', Paymentcontroller.renderProductPage);
 payment_route.post('/createOrder', Paymentcontroller.createOrder);
 
 module.exports = payment_route;
