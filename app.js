@@ -17,6 +17,7 @@ const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const path = require('path');
 const { MongoClient } = require('mongodb');
+const pincodeRoute = require('./routes/pincodeRoute.js');
 const port = process.env.PORT || 8080;
  
 app.use(function (req, res, next) {
@@ -107,6 +108,7 @@ app.use('/api', router);
 app.use('/api', shipmentRoute);
 app.use('/api', paymentRoute);
 app.use('/api', appRoute);
+app.use('/api',pincodeRoute);
 
 app.use(cors());
 
