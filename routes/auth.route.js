@@ -62,25 +62,6 @@ router.get('/profile',checkAuth,(req,res)=>{
     })
 })
 
-
-// router.get('/profile/:userId', checkAuth, (req, res) => {
-//     const userId = req.params.userId;
-
-//     User.findById(userId)
-//         .exec()
-//         .then((result) => {
-//             if (result) {
-//                 res.json({ success: true, data: result });
-//             } else {
-//                 res.status(404).json({ success: false, message: "User not found" });
-//             }
-//         })
-//         .catch((err) => {
-//             console.error(err);
-//             res.status(500).json({ success: false, message: "Server error" });
-//         });
-// });
-
 router.get('/succes', async (req, res, next) => {
     try {
         const user = await User.find({});
