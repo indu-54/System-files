@@ -1,19 +1,4 @@
-// const router = require('express').Router();
-// const axios = require("axios");
-// router.get('/post',(req,res)=>{
-//   axios.get("https://api.postalpincode.in/pincode/110084",(req,res)=>{
-//     console.log(res['PostOffice'])
-   
-//   });
-// //   fetch('https://api.postalpincode.in/pincode/110084')
-// //   .then(res=>{
-// //     console.log(res)
- 
-// //   })
-// })
- 
- 
-// module.exports = router;
+
 
 const router = require('express').Router();
 const axios = require("axios");
